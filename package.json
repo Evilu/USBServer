@@ -1,0 +1,7 @@
+{
+  "name": "usbServer",
+  "version": "1.0.0",
+  "devDependencies": {
+    "usb": "^1.7.2"
+  }
+}
