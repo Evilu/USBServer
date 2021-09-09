@@ -4,5 +4,8 @@
   "devDependencies": {
     "socket.io": "^4.2.0",
     "usb": "^1.7.2"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }

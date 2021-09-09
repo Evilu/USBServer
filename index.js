@@ -1,5 +1,5 @@
 const usb = require('usb')
-const io = require("socket.io")(3000);
+const io = require("socket.io")(3005);
 
 (async () => {
 
@@ -7,7 +7,6 @@ const io = require("socket.io")(3000);
 io.on("connection", async socket => {
 
     socket.emit("Connected!");
-
 
     usb.on('attach', (device) => {
         (async () => {
