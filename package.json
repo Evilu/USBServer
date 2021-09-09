@@ -2,6 +2,7 @@
   "name": "usbServer",
   "version": "1.0.0",
   "devDependencies": {
+    "socket.io": "^4.2.0",
     "usb": "^1.7.2"
   }
 }
