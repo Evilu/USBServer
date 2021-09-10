@@ -52,8 +52,6 @@ io.on("connection", async socket => {
                 label: ` Product: ${el.product}, Vendor: ${el.manufacturer}`
             }
             usbTree.push(obj);
-            el.id = el.deviceDescriptor.idProduct
-            el.parentId = el._parent.deviceDescriptor.idProduct
         });
         return usbTree
     }
