@@ -6,6 +6,6 @@
     "usb": "^1.7.2"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node socketRouter.js"
   }
 }
