@@ -12,17 +12,20 @@ const makeUSBTree = require('./services/usbService').makeUSBTree;
 
         socket.emit("tree", tree);
 
-        usb.on('attach', () => {
+        usb.on('attach', (device) => {
             (async () => {
                 const tree = await makeUSBTree()
                 socket.emit("tree", tree);
+                socket.emit("attach",device.deviceDescriptor.idProduct);
             })();
         });
 
-        usb.on('detach', () => {
+        usb.on('detach', (device) => {
             (async () => {
                 const tree = await makeUSBTree()
                 socket.emit("tree", tree);
+                socket.emit("detach",device.deviceDescriptor.idProduct);
+
             })();
         });
 
