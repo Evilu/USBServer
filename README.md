@@ -16,10 +16,10 @@ Installs project's critical node_modules, make sure you run it first!
 
 Runs the app.
 
-## Importent message to Microsoft Windows users!
+## Important message to Microsoft Windows users!
 
 
 Use [Zadig](https://zadig.akeo.ie/)  to install the WinUSB driver for your USB device.
-Otherwise you will get ### `LIBUSB_ERROR_NOT_SUPPORTED` when attempting to open devices.
+Otherwise, you will get ### `LIBUSB_ERROR_NOT_SUPPORTED` when attempting to open devices.
 
 Using Unix based systems (Linux flavors,macOS) is highly recommended!
